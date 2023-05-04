@@ -84,3 +84,16 @@ describe("Given the function findLargestNumber", () => {
     });
   });
 });
+
+describe("When given the function findLongestWord", () => {
+  describe("When given the words Gigachad and cringe", () => {
+    test("Then it should return Gigachad", () => {
+      const words = ["Gigachad", "cringe"];
+
+      const expectedAnswer = "Gigachad";
+      const returnedAnswer = index.findLongestWord(words);
+
+      expect(returnedAnswer).toBe(expectedAnswer);
+    });
+  });
+});
