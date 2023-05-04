@@ -20,8 +20,7 @@ const checkPrimeNumber = (number) => {
 
 const findLargestNumber = (numberList) => Math.max(...numberList);
 
-const findLongestWord = (words) =>
-  words.reduce((wordA, wordB) => (wordA.length < wordB.length ? wordB : wordA));
+const findLongestWord = (words) => words.sort((a, b) => b.length - a.length)[0];
 
 export default {
   checkIfHasAllVowels,

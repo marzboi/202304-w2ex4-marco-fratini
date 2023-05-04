@@ -96,4 +96,15 @@ describe("When given the function findLongestWord", () => {
       expect(returnedAnswer).toBe(expectedAnswer);
     });
   });
+
+  describe("When given the words Sergio, Kevin, Dalai-Lama", () => {
+    test("Then it should return Dalai-lama", () => {
+      const words = ["Sergio", "Kevin", "Dalai-lama"];
+
+      const expectedAnswer = "Dalai-lama";
+      const returnedAnswer = index.findLongestWord(words);
+
+      expect(returnedAnswer).toBe(expectedAnswer);
+    });
+  });
 });
