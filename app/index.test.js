@@ -23,3 +23,27 @@ describe("Given the function checkAllVowels", () => {
     });
   });
 });
+
+describe("Given the function checkAllWowels", () => {
+  describe("When given the number 4", () => {
+    test("then it should return true", () => {
+      const number = 4;
+
+      const expectedAnswer = true;
+      const returnedAnswer = index.checkEvenNumber(number);
+
+      expect(returnedAnswer).toBe(expectedAnswer);
+    });
+  });
+
+  describe("When given the number 3", () => {
+    test("Then it should return false", () => {
+      const number = 3;
+
+      const expectedAnswer = false;
+      const returnedAnswer = index.checkEvenNumber(number);
+
+      expect(returnedAnswer).toBe(expectedAnswer);
+    });
+  });
+});
