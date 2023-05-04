@@ -18,10 +18,11 @@ const checkPrimeNumber = (number) => {
   return number > 1;
 };
 
+const findLargestNumber = (numberList) => Math.max(...numberList);
+
 export default {
   checkIfHasAllVowels,
   checkEvenNumber,
   checkPrimeNumber,
+  findLargestNumber,
 };
-
-console.log(checkPrimeNumber(4));
