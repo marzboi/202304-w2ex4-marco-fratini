@@ -10,7 +10,16 @@ const checkIfHasAllVowels = (word) => {
 
 const checkEvenNumber = (number) => number % 2 === 0;
 
+const checkPrimeNumber = (number) => {
+  for (let i = 2, s = Math.sqrt(number); i <= s; i++) {
+    if (number % i === 0) return false;
+  }
+
+  return number > 1;
+};
+
 export default {
   checkIfHasAllVowels,
   checkEvenNumber,
+  checkPrimeNumber,
 };
