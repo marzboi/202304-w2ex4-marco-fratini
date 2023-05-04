@@ -1,6 +1,6 @@
-const checkAllVowels = (word) => {
+const checkIfHasAllVowels = (word) => {
   if (!word) {
-    throw new Error("No word provided");
+    return "No word provided";
   }
 
   const vowels = ["a", "e", "i", "o", "u"];
@@ -9,5 +9,5 @@ const checkAllVowels = (word) => {
 };
 
 export default {
-  checkAllVowels,
+  checkIfHasAllVowels,
 };

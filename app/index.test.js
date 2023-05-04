@@ -6,7 +6,18 @@ describe("Given the function checkAllVowels", () => {
       const word = "Marco";
 
       const expectedAnswer = false;
-      const returnedAnswer = index.checkAllVowels(word);
+      const returnedAnswer = index.checkIfHasAllVowels(word);
+
+      expect(returnedAnswer).toBe(expectedAnswer);
+    });
+  });
+
+  describe("When given the an empty reply", () => {
+    test("Then it should return an error", () => {
+      const word = "";
+
+      const returnedAnswer = index.checkIfHasAllVowels(word);
+      const expectedAnswer = "No word provided";
 
       expect(returnedAnswer).toBe(expectedAnswer);
     });
