@@ -20,7 +20,10 @@ const checkPrimeNumber = (number) => {
 
 const findLargestNumber = (numberList) => Math.max(...numberList);
 
-const findLongestWord = (words) => words.sort((a, b) => b.length - a.length)[0];
+const findLongestWord = (words) =>
+  words.sort((valueA, valueB) => valueB.length - valueA.length)[0];
+
+const findNumberInArray = (number, numberList) => numberList.includes(number);
 
 export default {
   checkIfHasAllVowels,
@@ -28,4 +31,5 @@ export default {
   checkPrimeNumber,
   findLargestNumber,
   findLongestWord,
+  findNumberInArray,
 };
