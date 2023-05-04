@@ -84,3 +84,27 @@ describe("Given the function findLargestNumber", () => {
     });
   });
 });
+
+describe("When given the function findLongestWord", () => {
+  describe("When given the words Gigachad and cringe", () => {
+    test("Then it should return Gigachad", () => {
+      const words = ["Gigachad", "cringe"];
+
+      const expectedAnswer = "Gigachad";
+      const returnedAnswer = index.findLongestWord(words);
+
+      expect(returnedAnswer).toBe(expectedAnswer);
+    });
+  });
+
+  describe("When given the words Sergio, Kevin, Dalai-Lama", () => {
+    test("Then it should return Dalai-lama", () => {
+      const words = ["Sergio", "Kevin", "Dalai-lama"];
+
+      const expectedAnswer = "Dalai-lama";
+      const returnedAnswer = index.findLongestWord(words);
+
+      expect(returnedAnswer).toBe(expectedAnswer);
+    });
+  });
+});
