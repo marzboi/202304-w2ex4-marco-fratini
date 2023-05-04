@@ -48,13 +48,37 @@ describe("Given the function checkEvenNumber", () => {
   });
 });
 
-describe("Given given the the function checkIsPrime", () => {
+describe("Given given the function checkIsPrime", () => {
   describe("When given the number 4", () => {
     test("Then it should return false", () => {
       const number = 4;
 
       const expectedAnswer = false;
       const returnedAnswer = index.checkPrimeNumber(number);
+
+      expect(returnedAnswer).toBe(expectedAnswer);
+    });
+  });
+});
+
+describe("Given the function findLargestNumber", () => {
+  describe("When given the numbers 3, 5, 7, 9", () => {
+    test("Then it should return 9", () => {
+      const number = [3, 5, 7, 9];
+
+      const expectedAnswer = 9;
+      const returnedAnswer = index.findLargestNumber(number);
+
+      expect(returnedAnswer).toBe(expectedAnswer);
+    });
+  });
+
+  describe("When given the numbers -1, 50, -1000", () => {
+    test("Then it should return 50", () => {
+      const number = [-1, 50, -1000];
+
+      const expectedAnswer = 50;
+      const returnedAnswer = index.findLargestNumber(number);
 
       expect(returnedAnswer).toBe(expectedAnswer);
     });
