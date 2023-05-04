@@ -85,7 +85,7 @@ describe("Given the function findLargestNumber", () => {
   });
 });
 
-describe("When given the function findLongestWord", () => {
+describe("Given the function findLongestWord", () => {
   describe("When given the words Gigachad and cringe", () => {
     test("Then it should return Gigachad", () => {
       const words = ["Gigachad", "cringe"];
@@ -103,6 +103,32 @@ describe("When given the function findLongestWord", () => {
 
       const expectedAnswer = "Dalai-lama";
       const returnedAnswer = index.findLongestWord(words);
+
+      expect(returnedAnswer).toBe(expectedAnswer);
+    });
+  });
+});
+
+describe("Given the function findNumberInList", () => {
+  describe("When given the number 8 and the list 1 2 3 4 5 6 7 8 9", () => {
+    test("Then it should return true", () => {
+      const number = 8;
+      const numberList = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+      const expectedAnswer = true;
+      const returnedAnswer = index.findNumberInList(number, numberList);
+
+      expect(returnedAnswer).toBe(expectedAnswer);
+    });
+  });
+
+  describe("When given the number 900 and the list 300 600 900", () => {
+    test("Then it should return true", () => {
+      const number = 900;
+      const numberList = [300, 600, 900];
+
+      const expectedAnswer = true;
+      const returnedAnswer = index.findNumberInList(number, numberList);
 
       expect(returnedAnswer).toBe(expectedAnswer);
     });
