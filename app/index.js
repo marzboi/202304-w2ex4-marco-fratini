@@ -23,3 +23,5 @@ export default {
   checkEvenNumber,
   checkPrimeNumber,
 };
+
+console.log(checkPrimeNumber(4));
