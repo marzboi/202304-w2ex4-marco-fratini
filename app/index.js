@@ -1,4 +1,4 @@
-const checkAllVocals = (word) => {
+const checkAllVowels = (word) => {
   if (!word) {
     throw new Error("No word provided");
   }
@@ -9,5 +9,5 @@ const checkAllVocals = (word) => {
 };
 
 export default {
-  checkAllVocals,
+  checkAllVowels,
 };
