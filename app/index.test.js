@@ -26,7 +26,7 @@ describe("Given the function checkAllVowels", () => {
 
 describe("Given the function checkEvenNumber", () => {
   describe("When given the number 4", () => {
-    test("then it should return true", () => {
+    test("Then it should return true", () => {
       const number = 4;
 
       const expectedAnswer = true;
@@ -42,6 +42,19 @@ describe("Given the function checkEvenNumber", () => {
 
       const expectedAnswer = false;
       const returnedAnswer = index.checkEvenNumber(number);
+
+      expect(returnedAnswer).toBe(expectedAnswer);
+    });
+  });
+});
+
+describe("Given given the the function checkIsPrime", () => {
+  describe("When given the number 4", () => {
+    test("Then it should return false", () => {
+      const number = 4;
+
+      const expectedAnswer = false;
+      const returnedAnswer = index.checkPrimeNumber(number);
 
       expect(returnedAnswer).toBe(expectedAnswer);
     });
