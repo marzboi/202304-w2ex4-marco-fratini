@@ -24,7 +24,7 @@ describe("Given the function checkAllVowels", () => {
   });
 });
 
-describe("Given the function checkAllWowels", () => {
+describe("Given the function checkEvenNumber", () => {
   describe("When given the number 4", () => {
     test("then it should return true", () => {
       const number = 4;
