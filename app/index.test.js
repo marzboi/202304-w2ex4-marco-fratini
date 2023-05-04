@@ -121,4 +121,16 @@ describe("Given the function findNumberInList", () => {
       expect(returnedAnswer).toBe(expectedAnswer);
     });
   });
+
+  describe("When given the number 900 and the list 300 600 900", () => {
+    test("Then it should return true", () => {
+      const number = 900;
+      const numberList = [300, 600, 900];
+
+      const expectedAnswer = true;
+      const returnedAnswer = index.findNumberInList(number, numberList);
+
+      expect(returnedAnswer).toBe(expectedAnswer);
+    });
+  });
 });
