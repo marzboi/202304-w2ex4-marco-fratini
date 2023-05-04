@@ -8,6 +8,8 @@ const checkIfHasAllVowels = (word) => {
   return vowels.every((vowels) => word.includes(vowels));
 };
 
+const checkEvenNumber = (number) => number % 2 === 0;
+
 export default {
   checkIfHasAllVowels,
 };
